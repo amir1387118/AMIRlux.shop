@@ -1,5 +1,5 @@
-
 name: Deploy to Liara
+
 on:
   push:
     branches:
@@ -15,10 +15,10 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Project
         run: npm run build
