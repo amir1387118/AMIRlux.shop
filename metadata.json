@@ -1,0 +1,10 @@
+
+{
+  "name": "AmirLux - Smart Luxury Marketplace",
+  "description": "فروشگاه هوشمند امیرلوکس با قابلیت استعلام لحظه‌ای قیمت طلا و محصولات زیبایی با قدرت هوش مصنوعی Gemini.",
+  "repository": "https://github.com/amir1387118/AMIRlux.shop.git",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

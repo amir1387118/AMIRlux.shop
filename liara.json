@@ -1,0 +1,9 @@
+
+{
+  "app": "amirlux",
+  "platform": "static",
+  "build": {
+    "command": "npm run build",
+    "output": "dist"
+  }
+}

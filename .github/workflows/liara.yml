@@ -1,0 +1,30 @@
+
+name: Deploy to Liara
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Install Liara CLI
+        run: npm install -g @liara/cli@6
+
+      - name: Deploy to Liara
+        run: liara deploy --api-token=${{ secrets.LIARA_API_TOKEN }} --detach

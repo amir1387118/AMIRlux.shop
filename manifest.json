@@ -1,0 +1,18 @@
+
+{
+  "name": "AmirLux - Luxury Store",
+  "short_name": "AmirLux",
+  "description": "فروشگاه تخصصی طلا، جواهر و محصولات زیبایی امیرلوکس",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfbf9",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3259/3259448.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
